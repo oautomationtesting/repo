@@ -15,6 +15,9 @@ test('master title', async ({ page }) => {
   await page.getByRole('link', { name: 'master' }).click();
   await page.getByRole('link', { name: 'Get started' }).click();
 
-  await page.goto("myurl");;
+  await page.goto("myurl");
+
+  await page.getByRole('link', { name: 'Branch change' }).click();
+  await page.getByRole('link', { name: 'Get started' }).click();
 
 });
