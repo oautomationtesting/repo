@@ -19,3 +19,6 @@ test('truem', async ({ page }) => {
     await expect(page).toHaveTitle(/Google/);
 
 });
+test('method', async ({ page }) => {
+    await page.goto('https://google.com');
+})
