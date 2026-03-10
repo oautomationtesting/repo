@@ -20,5 +20,9 @@ test('truem', async ({ page }) => {
 
 });
 test('method', async ({ page }) => {
-    await page.goto('https://google.com');
+    await page.goto('https://yourube.com');
+})
+
+test('mbr', async ({ page }) => {
+    console.log("mbd");
 })
