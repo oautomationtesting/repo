@@ -15,4 +15,6 @@ test('get started link', async ({ page }) => {
   await page.getByRole('link', { name: 'Get started' }).click();
   await page.getByRole('sdd', { name: 'Get started' }).click();
 
+  await page.goto("myurl");;
+
 });
