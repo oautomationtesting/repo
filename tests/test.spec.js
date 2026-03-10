@@ -20,5 +20,9 @@ test('truem', async ({ page }) => {
 
 });
 test('method', async ({ page }) => {
-    await page.goto('https://google.com');
+    await page.goto('https://master.com');
+})
+
+test('master method', async ({ page }) => {
+    console.log('master method');
 })
