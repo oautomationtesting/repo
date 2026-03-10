@@ -12,9 +12,12 @@ test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+  await page.getByRole('link', { name: 'Branch change' }).click();
   await page.getByRole('link', { name: 'Get started' }).click();
 
-  await page.goto("myurl");;
+  await page.goto("myurl");
+
+  await page.getByRole('link', { name: 'Branch change' }).click();
+  await page.getByRole('link', { name: 'Get started' }).click();
 
 });
